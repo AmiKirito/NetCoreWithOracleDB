@@ -1,0 +1,12 @@
+﻿@model Sale
+@{
+    ViewBag.Title = "Sale details";
+}
+
+<h4>ID: @Model.Sales_Id</h4>
+<h4>Check number: @Model.CheckNumber</h4>
+<h4>Good ID: @Model.Good_Id</h4>
+<h4>Date: @Model.Date.ToShortDateString()</h4>
+<hr />
+
+<a class="btn btn-outline-info" asp-action="GetSales" asp-controller="Sale">Back to sales</a>

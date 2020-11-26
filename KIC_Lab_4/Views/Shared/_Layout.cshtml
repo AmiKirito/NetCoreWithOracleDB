@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap-4.5.3/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="bg-dark">
+        <div class="container d-flex flex-row">
+            <a class="btn btn-info mt-2 mb-2" asp-action="GetGoods" asp-controller="Good">Goods</a>
+            <a class="btn btn-info mt-2 mb-2 ml-1" asp-action="GetDepartments" asp-controller="Department">Departments</a>
+            <a class="btn btn-info mt-2 mb-2 ml-1" asp-action="GetWorkers" asp-controller="Worker">Workers</a>
+            <a class="btn btn-info mt-2 mb-2 ml-1" asp-action="GetSales" asp-controller="Sale">Sales</a>
+            <a class="btn btn-info mt-2 mb-2 ml-1" asp-action="SetDescription" asp-controller="Good">Call stored procedure</a>
+            <a class="btn btn-info mt-2 mb-2 ml-1" asp-action="GetMaxdeptPrice" asp-controller="Department">Call to a function</a>
+        </div>
+    </header>
+    <div class="container">
+        @RenderBody()
+    </div>
+</body>
+</html>

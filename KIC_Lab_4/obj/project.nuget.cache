@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "i0+2BsvhqvWzI8NBwrRbAovy4p6u97pdILqQM5nU2ynckhjjeTpCpNx+obRdr9irkM9qP+kwAVwFPUmmqBwQNA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Roman_Mykhaylenko\\source\\repos\\KIC_Lab_4\\KIC_Lab_4\\KIC_Lab_4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Roman_Mykhaylenko\\.nuget\\packages\\oracle.manageddataaccess.core\\2.19.90\\oracle.manageddataaccess.core.2.19.90.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+﻿@model Worker
+@{
+    ViewBag.Title = "Worker details";
+}
+
+<h4>ID: @Model.Workers_Id</h4>
+<h4>Name: @Model.Name</h4>
+<h4>Department ID: @Model.Dept_ID</h4>
+<h4>Address: @Model.Address</h4>
+<h4>Info: @Model.Information</h4>
+<hr />
+<a class="btn btn-outline-info" asp-action="GetWorkers" asp-controller="Worker">Back to workers</a>

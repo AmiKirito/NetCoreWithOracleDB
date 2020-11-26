@@ -1,0 +1,16 @@
+﻿@model ICollection<Sale>
+@{
+    ViewBag.Title = "Sales";
+}
+
+<h1>Sales</h1>
+
+@foreach (var sale in Model)
+{
+    <h4>ID: @sale.Sales_Id</h4>
+    <h4>Check number: @sale.CheckNumber</h4>
+    <h4>Good ID: @sale.Good_Id</h4>
+    <h4>Date: @sale.Date.ToShortDateString()</h4>
+    <a class="btn btn-outline-info" asp-action="GetSaleById" asp-controller="Sale" asp-route-saleId="@sale.Sales_Id">Details</a>
+    <hr />
+}

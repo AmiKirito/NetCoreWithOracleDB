@@ -1,0 +1,19 @@
+﻿@model ICollection<Good>
+@{
+    ViewBag.Title = "Goods";
+}
+
+<h1>Goods</h1>
+
+@foreach (var good in Model)
+{
+    <h4>ID: @good.Good_Id</h4>
+    <h4>Name: @good.Name</h4>
+    <h4>Price: $@good.Price</h4>
+    <h4>Producer: @good.Producer</h4>
+    <h4>Quantity: @good.Quantity items</h4>
+    <h4>Department ID: @good.Dept_Id</h4>
+    <h4>Description: @good.Description</h4>
+    <a class="btn btn-outline-info" asp-action="GetGoodById" asp-controller="Good" asp-route-goodId="@good.Good_Id">Details</a>
+    <hr />
+}

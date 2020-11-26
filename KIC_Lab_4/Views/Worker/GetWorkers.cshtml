@@ -1,0 +1,17 @@
+﻿@model ICollection<Worker>
+@{
+    ViewBag.Title = "Workers";
+}
+
+<h1>Workers</h1>
+
+@foreach (var worker in Model)
+{
+    <h4>ID: @worker.Workers_Id</h4>
+    <h4>Name: @worker.Name</h4>
+    <h4>Department ID: @worker.Dept_ID</h4>
+    <h4>Address: @worker.Address</h4>
+    <h4>Info: @worker.Information</h4>
+    <a class="btn btn-outline-info" asp-action="GetWorkerById" asp-controller="Worker" asp-route-workerId="@worker.Workers_Id">Details</a>
+    <hr />
+}

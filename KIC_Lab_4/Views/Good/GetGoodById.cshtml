@@ -1,0 +1,14 @@
+﻿@model Good
+@{
+    ViewBag.Title = "Good details";
+}
+
+<h4>ID: @Model.Good_Id</h4>
+<h4>Name: @Model.Name</h4>
+<h4>Price: $@Model.Price</h4>
+<h4>Producer: @Model.Producer</h4>
+<h4>Quantity: @Model.Quantity items</h4>
+<h4>Department ID: @Model.Dept_Id</h4>
+<h4>Description: @Model.Description</h4>
+
+<a class="btn btn-outline-info" asp-action="GetGoods" asp-controller="Good">Back to goods</a>

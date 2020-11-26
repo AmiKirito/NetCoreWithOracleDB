@@ -1,0 +1,10 @@
+﻿@model Department
+@{ 
+    ViewBag.Title = "Department details";
+}
+
+<h4>ID: @Model.Dept_ID</h4>
+<h4>Name: @Model.Name</h4>
+<h4>Info: @Model.Info</h4>
+<a class="btn btn-outline-info" asp-action="GetDepartments" asp-controller="Department">Back to departments</a>
+<hr />
